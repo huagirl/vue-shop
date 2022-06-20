@@ -4,11 +4,14 @@ import './registerServiceWorker'
 import router from './router'
 import './plugins/element'
 import axios from 'axios'
+import TreeTable from 'vue-table-with-tree-grid'
+
 
 //导入字体图标
 import './assets/iconfont/iconfont.css'
 // 导入全局样式表
 import './assets/css/global.css';
+Vue.component('tree-table', TreeTable)
 
 Vue.config.productionTip = false
 //配置请求的根路径
